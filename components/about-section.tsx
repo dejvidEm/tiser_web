@@ -19,7 +19,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-16">
+      <div className="container mx-auto sm:px-16 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div
             className={`transition-all duration-700`}
