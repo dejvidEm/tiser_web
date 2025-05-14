@@ -22,7 +22,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div
-            className={`transition-all duration-700 ${isInView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+            className={`transition-all duration-700`}
           >
             <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-600 mb-4">O MNE</div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Pomôžem so všetkým, čo potrebujete</h2>
