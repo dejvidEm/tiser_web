@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "EuroConstruct | European Construction & Excavation Experts",
-  description: "Professional construction, masonry, and excavation services across Europe",
+  title: "Jozef Tišer | Stavebné práce v celej Európe",
+  description: "Profesionálne služby v oblasti výstavby, demolácie, výkopových a murárskych prác po celej Európe. Garantujem kvalitné remeselné práce a spokojnosť zákazníka.",
     generator: 'v0.dev'
 }
 
