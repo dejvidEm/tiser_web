@@ -87,7 +87,7 @@ export default function EuropeMap() {
                     {getCountryInfo(selectedCountry)?.projects}
                   </p>
                   <p className="text-gray-600">
-                    Poskytujeme kompletné služby v oblasti výstavby, demolácie, murárskych a výkopových prác v{" "}
+                    Poskytujem kompletné služby v oblasti výstavby, demolácie, murárskych a výkopových prác v{" "}
                     {getCountryInfo(selectedCountry)?.name}.
                   </p>
                 </div>

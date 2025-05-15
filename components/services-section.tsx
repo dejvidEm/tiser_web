@@ -77,8 +77,8 @@ export default function ServicesSection() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Komplexné stavebné riešenia</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Ponúkame širokú škálu stavebných a súvisiacich služieb po celej Európe, poskytujeme excelenciu v každom
-            projekte, ktorý realizujeme.
+            Ponúkam širokú škálu stavebných a súvisiacich služieb po celej Európe, poskytujem excelenciu v každom
+            projekte, ktorý realizujem.
           </p>
         </div>
 
