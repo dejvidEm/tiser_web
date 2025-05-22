@@ -16,94 +16,90 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20">
-        <div className="absolute inset-0 -z-20">
-          <Image
-            src="/images/hero-background.jpg"
-            alt="Stavebné práce - brúsenie s iskrami"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Gradient overlay - darker on the left side where text is */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30"></div>
+  <div className="absolute inset-0 -z-20">
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover"
+    >
+      <source src="/videos/prve.mp4" type="video/mp4" />
+      Tvoj prehliadač nepodporuje video tag.
+    </video>
+    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30"></div>
+  </div>
+
+  <div className="relative z-10 container mx-auto px-4 py-20 md:py-32 lg:py-40">
+    <div className="max-w-3xl">
+      <div className="flex items-center space-x-2 mb-6">
+        <div className="h-[1px] w-10 bg-orange-500"></div>
+        <p className="text-orange-500 uppercase tracking-wider text-sm font-medium">
+          Moja vízia
+        </p>
+      </div>
+
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+        Kvalitná 100% práca <br />
+        <span className="text-white/70">&amp; Poctivé služby</span>
+      </h1>
+
+      <p className="text-white/80 text-lg mb-8 max-w-xl">
+      Realizujem búracie, murárske a výkopové práce s viac ako 10-ročnou praxou naprieč celou Európou – vždy s dôrazom na kvalitu a spoľahlivosť.
+      </p>
+
+      <Link href="/#about">
+        <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-none px-8 py-6 text-lg group transition-all duration-300">
+          KONTAKTOVAŤ
+          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+        </Button>
+      </Link>
+    </div>
+
+    <div className="hidden lg:block absolute right-10 bottom-24 bg-white rounded-lg shadow-xl p-6 w-72 transform rotate-2 z-[99999] animate-float">
+      <h3 className="text-lg font-bold text-gray-800 mb-4">Moje výsledky</h3>
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <span className="text-gray-600">Dokončené zákazky</span>
+          <span className="text-orange-600 font-bold">100+</span>
         </div>
-
-        <div className="relative z-10 container mx-auto px-4 py-20 md:py-32 lg:py-40">
-          <div className="max-w-3xl">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="h-[1px] w-10 bg-orange-500"></div>
-              <p className="text-orange-500 uppercase tracking-wider text-sm font-medium">
-                Moja vízia
-              </p>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Kvalitná výstavba <br />
-              <span className="text-white/70">&amp; Poctivé služby</span>
-            </h1>
-
-            <p className="text-white/80 text-lg mb-8 max-w-xl">
-              Vytváram mimoriadne priestory s viac ako 10-ročnými skúsenosťami
-              po celej Európe a s pevnými štandardmi.
-            </p>
-
-            <Link href="/#about">
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-none px-8 py-6 text-lg group transition-all duration-300">
-                ZISTIŤ VIAC
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-          </div>
-
-          {/* Floating stats card with animation */}
-          <div className="hidden lg:block absolute right-10 bottom-24 bg-white rounded-lg shadow-xl p-6 w-72 transform rotate-2 z-[99999] animate-float">
-            <h3 className="text-lg font-bold text-gray-800 mb-4">
-              Moje výsledky
-            </h3>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-600">Dokončené zákazky</span>
-                <span className="text-orange-600 font-bold">100+</span>
-              </div>
-              <div className="h-px bg-gray-200"></div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-600">Krajiny pôsobenia</span>
-                <span className="text-orange-600 font-bold">12</span>
-              </div>
-              <div className="h-px bg-gray-200"></div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-600">Spokojnosť klientov</span>
-                <span className="text-orange-600 font-bold">99%</span>
-              </div>
-            </div>
-
-            {/* Floating icons - fewer and bigger ones on right side only */}
-            <div className="absolute -top-12 right-0 bg-orange-50 p-4 rounded-full animate-float-delay-1 z-[99999]">
-              <BarChart2 className="h-7 w-7 text-orange-600" />
-            </div>
-            <div className="absolute top-1/2 -translate-y-1/2 right-[-48px] bg-blue-50 p-4 rounded-full animate-float-delay-3 z-[99999]">
-              <Building className="h-7 w-7 text-blue-600" />
-            </div>
-            <div className="absolute -bottom-10 right-2 bg-green-50 p-4 rounded-full animate-float-delay-2 z-[99999]">
-              <Users className="h-7 w-7 text-green-600" />
-            </div>
-          </div>
+        <div className="h-px bg-gray-200"></div>
+        <div className="flex items-center justify-between">
+          <span className="text-gray-600">Krajiny pôsobenia</span>
+          <span className="text-orange-600 font-bold">12</span>
         </div>
-
-        {/* Smooth diagonal divider using SVG instead of CSS gradient */}
-        <div className="absolute -bottom-[1px] left-0 right-0 w-full -z-10">
-          <svg
-            viewBox="0 0 1440 120"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            className="w-full h-auto"
-            style={{ display: "block" }}
-          >
-            <path d="M0 120L1440 0V120H0Z" fill="white" />
-          </svg>
+        <div className="h-px bg-gray-200"></div>
+        <div className="flex items-center justify-between">
+          <span className="text-gray-600">Spokojnosť klientov</span>
+          <span className="text-orange-600 font-bold">99%</span>
         </div>
-      </section>
+      </div>
+
+      <div className="absolute -top-12 right-0 bg-orange-50 p-4 rounded-full animate-float-delay-1 z-[99999]">
+        <BarChart2 className="h-7 w-7 text-orange-600" />
+      </div>
+      <div className="absolute top-1/2 -translate-y-1/2 right-[-48px] bg-blue-50 p-4 rounded-full animate-float-delay-3 z-[99999]">
+        <Building className="h-7 w-7 text-blue-600" />
+      </div>
+      <div className="absolute -bottom-10 right-2 bg-green-50 p-4 rounded-full animate-float-delay-2 z-[99999]">
+        <Users className="h-7 w-7 text-green-600" />
+      </div>
+    </div>
+  </div>
+
+  <div className="absolute -bottom-[1px] left-0 right-0 w-full -z-10">
+    <svg
+      viewBox="0 0 1440 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      className="w-full h-auto"
+      style={{ display: "block" }}
+    >
+      <path d="M0 120L1440 0V120H0Z" fill="white" />
+    </svg>
+  </div>
+</section>
 
       {/* About Us Section */}
       <AboutSection />

@@ -78,13 +78,14 @@ export default function AboutSection() {
             <div
               className={`relative z-10 transition-all duration-700 delay-300 ${isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
             >
-              <Image
-                src="/vsetko.jpg"
-                alt="Stavebný tím"
-                width={600}
-                height={700}
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
+               <video
+      src="/videos/druhe.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-auto rounded-lg shadow-xl"
+    ></video>
             </div>
             <div
               className={`absolute top-0 right-0 bg-orange-600 w-full h-full rounded-lg transform translate-x-4 translate-y-4 -z-10 transition-all duration-700 delay-500 ${isInView ? "opacity-20" : "opacity-0"}`}
